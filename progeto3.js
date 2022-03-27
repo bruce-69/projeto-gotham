@@ -77,18 +77,56 @@ console.log('vc rebe uma mensagen 1 vc olha 2 nao ')
 
 }else if ( dick == 2 ){
 casaço - 1 
-console.log(' durante os estudos ')
+console.log(' durante os estudos vc coxilou , vc acorda com o demina ti encarando , te da um sanduiche , \ne diz  quer tem motrar uma coisa ,  vc sabe q provavelmente é mintira . 1 vc entra no jogo dele 2 vc espulsa ele como senpre ')
 }
+console.log(' vc tem q estar na faculdade as 5 \n quando vc acabade comer algumas pessoas chegam vc vai falar com eles , e ti dao uma lista de livros 1984, de George Orwell\nO Lobo da Estepe \n Dom Casmurro')
+console.log('algus vao enbora ficam apenas 2  , 1 vc se senta com eles ou 2 volta ao trabalho    ')
 
-
+console.log(' vc se destrai com a cconversa e esquece da facudade as 5 horas vc olha noa celular e ja sao 4 34       ')
+// diminuir a bateria do celular 
 }
 //confrito da historia q define se vc vai ver o batman ou nao 
 
 
 
-function rotina ( ) {
+
+
+
+
+
+function facudade ( ) {  
+console.log(` hoje vc essas aulas Algoritmos e Programação, 
+Análise e Projeto de Algoritmos,
+Análise e Projeto de Software,
+Arquitetura e Organização de Computadores I,
+Arquitetura e Organização de Computadores II,
+Banco de Dados I,
+Banco de Dados II, 
+Circuitos Digitais`)
+     console.log('vc sai da faculdade cansanda sao 11 e meai da noite  ' )
+// diminuir istatos 
+
+
+}
+
+
+
+
+
+
+
+
+
+function rotina3( ) {
     var sai_tranpo = prompt('vc passa por um beco escuro ')
     var sai_tranpo = prompt('vc ouve um grito  ')
+// finais da historia onde vc pode vagalume e ver o batman talves ajudalo 
+
+//faser umtro ciclos 
+
+
+
+
 }
 
 
