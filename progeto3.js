@@ -7,11 +7,18 @@ console . log ('apresentacao    esse jogo se passa em gotham    e a personagem p
 
 // personagens batman alfred jim gordom dick graysom luke fox demian wayne
 // mais escolhas isso  e um jogo
-var saude = 10 
-var bateria_celular = 100
-var dinhero = 230
-var armas   = 4
-var casaço = 10
+
+
+const barbara ={    
+
+    saude : '10',
+    bateria_celular : '100',
+    dinhero : '230',
+    armas   : '4',
+    casaço : '10',
+     
+
+};
 //coreçao de  testo 
 
 function rotina1 ( )  {
@@ -19,57 +26,50 @@ function rotina1 ( )  {
     var manha = prompt(' 7  horas o despertador toca vc acorda1  ? ou dormi mas um pouco 2')
 if (manha == 1 ){
 console.log(' ao acordar vc ve sua casa bagunsado e seu pai indo para o trabalho  , oq vc faz 1 pergunta aonde ele vai 2 , espera ele sair ele liga para seu namorado  , 3 se aruma para o trabalho ')
- var acordar = prompt()
-}else if ( acordar == 1 ){
-console.log(' seu pai diz vou ao trabalho querida , parece q ouve um fugitivo em  arkham ')
 
 
-}if ( acordar == 2 ){
-console.log('ele atende mas diz q esta ocupado talvez eu te encontre na faculdade ')
+}if ( manha  == 2 ){
+    console.log(' vc dorme ate as oito e mwia e perde a hora da primeira aula  oq vc faz 1 corre e pega sua moto , 2 pede carona a algun amogo 3 pede  um  taxí ') 
 
-}if (acordar == 3 ){
-console.log(' vc se arruma toma cafe   \n coomo vc quer ir para o trbalho  1 ape 2 de moto  ou 3 liga para o demian e pede carona ')
-var deimian = pprompt ( ' ')
+     var atraso = prompt('')
 
-
-}if ( deimian == 1 ){
-console. log ('  depois de uma caminhada de  20 minutos dick passa por vc de carro é overece carona   ')// fazer algo mais 
-
-
-
-}if ( deimian == 2  ){
-console. log ('  vc chega a faculdade  depois de alguns minutos   ')
+}if  (atraso == 1 )
+console.log( '  vc chega a faculdade oq vc faz  1 corre para a aula ou 2 vai para uma cafeteria comer alguma coisa vc nao tomou cafe ainda  ')
+var faculdade = prompt()
+if ( faculdade == 1 )
+rotinafacu( )
 
 
-
-
-
-}if ( deimian == 3   ){
-    console. log ('  ele atende  e pergunta oq vc quer , vc responde  quer carona para a faculdade   \n  ele diz nao oq vc responde 1 tchau ou 2 manda ele se fuder ')
-    var conversa = prompt('')
-    
-    
-
-
-}if ( conversa == 1    ){
-    console. log ('  ele disliga')
-    
-    
-    
-} if (conversa == 2 ){
-     console.log(' vai vc tu tu tu ')
-
+ if (  faculdade == 2 ){ 
+console.log( `
+vc chega ou balcom oq vc pede 
+1Pão de Queijo Tradicional	com    Flat White	R$ 17, 50   
+2Croissant Multigrãos	com  Café Americano Gelado	R$ 15,50  
+3Croissant de Frango  com   Café Filtrado/Dia	10,35
+`)
+var cafe = prompt ( ' ')
+if ( cafe == 1 )
+(barbara.dinhero=- 17,50 )
+console.log(barbara.dinhero )
+console.log( '  come e volta para a aula ')
 }
 
 
 
+if ( cafe == 2 )
+         
+(barbara.dinhero=- 15,50 )
+console.log(barbara.dinhero )       
+console.log ( ' vc come  e vai para a sengunda aula')
+
+
+
+if ( cafe == 3 )
+(barbara.dinhero=- 10,35 )
+console.log(barbara.dinhero)
+console.log(  ' come e vai para  aula ')
+
 }
-
-
-
-
-
-
 
  
                 
@@ -77,7 +77,7 @@ console. log ('  vc chega a faculdade  depois de alguns minutos   ')
 
 // faculdade dimuiir estatos usar hora 
 function rotinafacu ( ) {
-var faculdade = console.log('  ja na faculdade o vc vai 1 direto parra as aulas  2 toma um cafe 3 vai para a biblioteca estudar  ')
+var faculdade = console.log('  ao chegar na sala oq vc faz se 1 entra apresa e se senta 2  ')
 
 var  facu = prompt('')
 if ( facu   ==1   ){
@@ -94,18 +94,28 @@ console.log( ` hoge vc tem essas aulas sao Algoritmos e Programação,
 
 }else if ( facu  == 2 ){
 
-console.log('durante a primeira a primeira aula o professor faz uma pergunta oq é um algoritimo , oq vc responde  ')
+console.log('durante a primeira a primeira aula o professor faz uma pergunta oq é um algoritimo , oq vc responde 1  algoritimo é uma sequências de ações encadeadas para realizar uma tarefa, ')
+console.log('2 nao sei , 3 um algoritmo é uma forma de realizar algoma tarefa de maneira mais eficientee ')
+var pergunta_pro = prompt('')
 
 
-
+}if ( pergunta_pro == 1 )  { 
+console.log('  o profesor Thales  responde muito bem ')
 
 }
-console.log(' vc tem q estar na faculdade as 5 \n quando vc acabade comer algumas pessoas chegam vc vai falar com eles , e ti dao uma lista de livros 1984, de George Orwell\nO Lobo da Estepe \n Dom Casmurro\n meu desfruto \n cem chances')
-console.log('algus vao enbora ficam apenas 2  , 1 vc se senta com eles ou 2 volta ao trabalho    ')
-var blibliotra  = prompt ('')
-console.log(' vc se destrai com a cconversa e esquece da facudade as 5 horas vc olha noa celular e ja sao 4 34       ')
+
+}
+//mais opisoes mais claro 
+
+
+//resduzir estatus durante a aula 
+
+
+
+
+
 // diminuir a bateria do celular 
-}
+
 //confrito da historia q define se vc vai ver o batman ou nao 
 
 
@@ -129,22 +139,13 @@ console.log(' vc se destrai com a cconversa e esquece da facudade as 5 horas vc 
 
 
 function rotina3( ) {
-    console.log ('depois de muito transito vc chega ao centro da cidade perto da tore wheyne acontece um acideti tudo parado o q vc faz 1 vai pela calsada ')
-    console.log(' 2 liga para seu pai  e avisa q vai se atrasar \n 3 vai pelo beco do crime ')
+ //pasagen de tenpo 
+    console.log(' as aulas a cabarao oq vc faz 1 volta pra casa 2 fica e revisa algumas materias ou 3 vai pro o bar  ')
 var volta4 = prompt ('')
-if (volta == 3 ){
-console.log(' vc nao mais crinça sabe de tudo q acontece nece lugar crimes trafico etc etc ')
-console.log('na saida do beco vc ve uma crianca magra chorando 1 a juda ou 2 continua seu trageto ')
-var golpe = prompt ('   ')
-}else if ( golpe == 1 ){
-console.log(' vc caio em um golpe     das sonbras aparece um homen armado   ele diz passa tudo boneca')
-console.log( ' oq vc faz 1 obodece ou 2 tenta fugir ')
-var golpe_2 = prompt(' 1 vc entrega seu celular mais ele te ataca ') //diminuir vida 
-console.log (' durante a briga vc ouve um barulho das sonbras sugem o batman ele derrota o baldido em pocos segundos logo depis a policia aparece ')
-
+// desnvlver historia 
 }
  
-}
+
   
   
  
@@ -155,3 +156,12 @@ console.log (' durante a briga vc ouve um barulho das sonbras sugem o batman ele
 
 //final da historia ou vai para o hospital e ve o batman ou vai pra casa sam e salva
     rotina1()
+
+     function  trabalho ( ){ 
+       // trabalhpo biblioteca da fucudade denvolver histia eslhas 
+
+
+     }
+
+
+    //  final volta pra casa vc pode morrer no camino vc pode se sequestrada levar um tiro ver o batman etc etc 
