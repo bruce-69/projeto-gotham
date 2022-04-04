@@ -20,6 +20,11 @@ golpe2:1,
 facada:2,
 tiro:4,
 }
+function cansaço (  casaço ){ 
+let cansada = batgirl.casaço - 1 
+console.log(  `$casaço vc esta cada vez mais cansada ` )
+}
+
 function bandido_aleatorio(){
 let lista = [bandido.facada, bandido.tiro, bandido.golpe2 ];
  let dano = lista = [Math.floor(Math.random()* 3)];
@@ -36,6 +41,8 @@ function estatos (saude , casaço ){
 console.log( saude ),console.log('vida')
 console.log(casaço ),console.log('energia')
 }
+
+
 estatos(batgirl.saude ,batgirl.casaço,console.log('vida e estamina batgirl'))
 let missao = '0'
 let primeira_missao = '1'
@@ -58,7 +65,7 @@ else if( briga = 2 || 1 )
   batalha(bandido.saude , batgirl.golpe ),console.log('vc  acerta mais dois socos ele cai e vc ajuda a garota a pulicia chega é vc vai enbora ')
   // repitir apartir da aq com o for 
  function proximo1 ( saude , golpe , casaço, gope2 ){
-console.log('mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
+console.log('mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao '),cansaço()
 let chamado_alternativo2 = prompt()
 if ( chamado_alternativo2 == 1 )
 console.log(` vc chega ao local é encontra  3 inimigos vc os enfrenta sua vida atual é `),bandido_aleatorio()
@@ -82,4 +89,4 @@ proximo1()
 if ( batgirl.casaço = 0 )
 console.log( 'vc  dismai é o alfre te resgata  ')
 
-// contar os dias for mais ciclos ate a 7 da manha 
+
