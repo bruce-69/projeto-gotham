@@ -9,7 +9,7 @@ let batman_missao1 ='1'
  }
 let batgirl={    
 saude:10,
-casaço:10,                                   
+casaço:7,                                   
 forca:9,
 golpe:4,
 }
@@ -41,10 +41,6 @@ function estatos (saude , casaço ){
 console.log( saude ),console.log('vida')
 console.log(casaço ),console.log('energia')
 }
-
-babs_cansada();
-babs_cansada();
- babs_cansada();
 estatos(batgirl.saude ,batgirl.casaço,console.log('vida e estamina batgirl'))
 let missao = '0'
 let primeira_missao = '1'
@@ -58,14 +54,24 @@ console.log(' quando vc chega ao local vc ve um casal descutindo ele parece nerv
  console.log(' 1 chega com calma tentando alcamalos ou 0 ataca sem do nen piedade ')
  let casal = prompt('')
  if ( casal = 0 ){
- console.log(` vc acerta o primeiro soco ele ainda esta meio sonzo qual golpe  vc quer usar 1 ou 2 `), console.log(' sua energia atual é '),babs_cansada();
+ console.log(` vc acerta o primeiro soco ele ainda esta meio sonzo qual golpe  vc quer usar 1 ou 2 `), console.log(' sua energia atual é ')
  let briga = prompt()
 }else if (casal = 1 )
- console.log('vc conten a situacao ate a pulicia chegar ')
+ console.log('vc conten a situacao ate a pulicia chegar '),babs_cansada();
 else if( briga = 2 || 1 )
-  batalha(bandido.saude , batgirl.golpe ),console.log('vc  acerta mais dois socos ele cai e vc ajuda a garota a pulicia chega é vc vai enbora ')
-  // repitir apartir da aq com o for 
+  batalha(bandido.saude , batgirl.golpe ),console.log('vc  acerta mais dois socos ele cai e vc ajuda a garota a pulicia chega é vc vai enbora   ')
 
+
+
+
+
+
+
+
+
+  for (var i = 0; i < repitir; i++) {
+    
+    console.log(i);
   //repitir com while
  function proximo1 ( saude , golpe , casaço, gope2 ){
 console.log('mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
@@ -81,18 +87,16 @@ function uma_da_manha( ){
  console.log('mais uma hora se pasa  agora sao 1 da manha da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
  let chamado_alternativo3 = prompt()
  if ( chamado_alternativo3 == 1 )
- console.log(` vc chega ao local é encontra  7 inimigos vc os enfrenta sua vida atual `),bandido_aleatorio() , console.log( 'vc sai com alguns ferrimentos '), console.log(' sua energia atual é '),babs_cansada();
+ console.log(` vc chega ao local é encontra  7 inimigos vc os enfrenta sua vida atual `),bandido_aleatorio() , console.log( 'vc sai com alguns ferrimentos '),babs_cansada();   
 }
 console.log(`mais uma hora se passa  agora sao 11 da noite é o radio taca , vc vai te o local \n  1 sim 2 nao `)
 let chamado2 = prompt()
   if ( chamado2 = 1 )
-console.log( `sua energia atual é  vc encontra 5 inimigos e os enfrentas sua vida atual é ` ),bandido_aleatorio(), console.log(' sua energia atual é '),babs_cansada();
+console.log( `sua energia atual é  vc encontra 5 inimigos e os enfrentas sua vida atual é ` ),bandido_aleatorio(), console.log(' sua energia atual é '),babs_cansada ();proximo1()
   if (chamado2 = 2 )
 proximo1()
-if ( batgirl.casaço = 4 )
-console.log( 'vc  dismai é o alfre te resgata  ')
-
-
-// terminar pergunta para repitir com o for 
-
-//if - cançaso  
+if ( babs_cansada= 2)
+console.log( 'vc  dismai é o alfre te resgata . vc acorda na batcaverna vc se levanta com dificuldade , ja esta quase a noite vc para a patrula de novo 1 sim 2 nao  ')
+ let repitir = prompt()
+  }
+ 
