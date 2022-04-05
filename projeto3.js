@@ -120,7 +120,7 @@ console.log( 'vc  dismai é o alfre te resgata . vc acorda na batcaverna vc se l
       console.log(casaço ),console.log('energia')
       }
  function proximo1 ( saude , golpe , casaço, gope2 ){
-console.log('mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
+console.log('\n mais um dia de patrulha começa mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
 let chamado_alternativo2 = prompt()
 if ( chamado_alternativo2 == 1 )
 console.log(` vc chega ao local é encontra  3 inimigos vc os enfrenta sua vida atual é`),bandido_aleatorio(), console.log(' sua energia atual é '),babs_cansada();
