@@ -16,7 +16,6 @@ golpe:4,
 let bandido={    
 saude:5,
 forca:4,
-golpe2:1,
 facada:2,
 tiro:4,
 }
@@ -24,7 +23,6 @@ function babs_cansada ( ){
 let cansada = batgirl.casaço -= 1 
 console.log( ` ${cansada } vc nuito cansada `  )
 }
-
 function bandido_aleatorio(){
 let lista = [bandido.facada, bandido.tiro, bandido.golpe2 ];
  let dano = lista = [Math.floor(Math.random()* 3)];
@@ -54,24 +52,12 @@ console.log(' quando vc chega ao local vc ve um casal descutindo ele parece nerv
  console.log(' 1 chega com calma tentando alcamalos ou 0 ataca sem do nen piedade ')
  let casal = prompt('')
  if ( casal = 0 ){
- console.log(` vc acerta o primeiro soco ele ainda esta meio sonzo qual golpe  vc quer usar 1 ou 2 `), console.log(' sua energia atual é ')
+ console.log(` vc acerta o primeiro soco ele ainda esta meio sonzo qual golpe  vc quer usar 1 ou 2 `), console.log(' sua energia atual é ')`${repitir +1 }`
  let briga = prompt()
 }else if (casal = 1 )
  console.log('vc conten a situacao ate a pulicia chegar '),babs_cansada();
 else if( briga = 2 || 1 )
-  batalha(bandido.saude , batgirl.golpe ),console.log('vc  acerta mais dois socos ele cai e vc ajuda a garota a pulicia chega é vc vai enbora   ')
-
-
-
-
-
-
-
-
-
-  for (var i = 0; i < repitir; i++) {
-    
-    console.log(i);
+  batalha(bandido.saude , batgirl.golpe ),console.log('vc  acerta mais dois socos ele cai e vc ajuda a garota a pulicia chega é vc vai enbora   ') `${repitir +1 }`
   //repitir com while
  function proximo1 ( saude , golpe , casaço, gope2 ){
 console.log('mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
@@ -92,11 +78,71 @@ function uma_da_manha( ){
 console.log(`mais uma hora se passa  agora sao 11 da noite é o radio taca , vc vai te o local \n  1 sim 2 nao `)
 let chamado2 = prompt()
   if ( chamado2 = 1 )
-console.log( `sua energia atual é  vc encontra 5 inimigos e os enfrentas sua vida atual é ` ),bandido_aleatorio(), console.log(' sua energia atual é '),babs_cansada ();proximo1()
+console.log( `sua energia atual é  vc encontra 5 inimigos e os enfrentas sua vida atual é ` ),bandido_aleatorio(), console.log( `sua energia atual é ${babs_cansada ()}`);proximo1()
   if (chamado2 = 2 )
 proximo1()
 if ( babs_cansada= 2)
 console.log( 'vc  dismai é o alfre te resgata . vc acorda na batcaverna vc se levanta com dificuldade , ja esta quase a noite vc para a patrula de novo 1 sim 2 nao  ')
  let repitir = prompt()
+ repitir 
+  for (var i = 0; i = repitir; i++) {
+    let batgirl={    
+      saude:10,
+      casaço:7,                                   
+      forca:9,
+      golpe:4,
+      }
+      let bandido={    
+      saude:5,
+      forca:4,
+      golpe2:1,
+      facada:2,
+      tiro:4,
+      }
+      function babs_cansada ( ){   
+      let cansada = batgirl.casaço -= 1 
+      console.log( ` ${cansada } vc nuito cansada `  )
+      }
+      function bandido_aleatorio(){
+      let lista = [bandido.facada, bandido.tiro, bandido.golpe2 ];
+       let dano = lista = [Math.floor(Math.random()* 3)];
+       console.log(batgirl.saude-=dano)
+      }
+      function bandido_estatus(batgirlgolpe , bandidosaude){
+       console.log(bandido.saude-batgirl, )
+      }
+      function batalha(saude , golpe ){
+      console.log(  saude = saude- golpe)
+      }
+      function estatos (saude , casaço ){
+       console.log('estatos personagen ')   
+      console.log( saude ),console.log('vida')
+      console.log(casaço ),console.log('energia')
+      }
+ function proximo1 ( saude , golpe , casaço, gope2 ){
+console.log('mais uma hora se pasa  agora sao 00 da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
+let chamado_alternativo2 = prompt()
+if ( chamado_alternativo2 == 1 )
+console.log(` vc chega ao local é encontra  3 inimigos vc os enfrenta sua vida atual é`),bandido_aleatorio(), console.log(' sua energia atual é '),babs_cansada();
+if ( chamado_alternativo2 = 2 )
+uma_da_manha()
+ }
+ uma_da_manha
+function uma_da_manha( ){
+  if( chamado_alternativo2 = 2  )
+ console.log('mais uma hora se pasa  agora sao 1 da manha da noite é o radio taca  mais uma vez , vc vai te o local \n  1 sim 2 nao ')
+ let chamado_alternativo3 = prompt()
+ if ( chamado_alternativo3 == 1 )
+ console.log(` vc chega ao local é encontra  7 inimigos vc os enfrenta sua vida atual `),bandido_aleatorio() , console.log( 'vc sai com alguns ferrimentos '),babs_cansada();   
+}
+console.log(`mais uma hora se passa  agora sao 11 da noite é o radio taca , vc vai te o local \n  1 sim 2 nao `)
+let chamado2 = prompt()
+  if ( chamado2 = 1 )
+console.log( `sua energia atual é  vc encontra 5 inimigos e os enfrentas sua vida atual é ` ),bandido_aleatorio(), console.log(`sua energia atual é `),babs_cansada ();proximo1()
+  if (chamado2 = 2 )
+proximo1()
+if ( babs_cansada= 2)
+console.log( 'vc  dismai é o alfre te resgata . vc acorda na batcaverna vc se levanta com dificuldade , ja esta quase a noite vc vai para a patrula de novo 1 sim 2 nao  ')
+  repitir = prompt()
   }
  
